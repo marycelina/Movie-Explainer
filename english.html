@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <title>English</title>
+        <style>
+        .movie-gallery{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.movie-card{
+    text-align:center;
+}
+
+.movie-card img{
+    height:600px;
+    width:400px;
+     transition:0.3s;}
+.movie-card img:hover{
+    transform:scale(1.1);}
+     body{
+    background-image: url('https://i.pinimg.com/736x/9c/4d/f2/9c4df25a6632ee135a87f5a1a8e3fd66.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+
+    #searchBar{
+    width:60%;
+    max-width:500px;
+    padding:12px;
+    font-size:18px;
+    border:none;
+    border-radius:25px;
+    outline:none;}
+    .search-container{
+    text-align:center;
+    margin:30px 0;}
+        </style>
+    </head>
+    <body style = "font-size: 20; font-family: 'Geneva';">
+        <h2>English movie explanations</h2>
+        <p>English movies often feature complex storylines, hidden meanings, unexpected plot twists, and symbolic elements that may be difficult to understand after a single viewing. Movie explanations help viewers understand the deeper themes, character motivations, ending interpretations, and important details that might have been missed. These explanations provide insights into the story, making the movie more engaging and enjoyable. They are especially useful for psychological thrillers, science fiction films, mystery movies, and films with open-ended conclusions.</p>
+        <div class="search-container">
+    <input
+        type="text" id="searchBar" placeholder="Search movies...">
+        </div>
+<div class="movie-gallery">
+
+    <div class="movie-card">
+        <a href = "https://variety.com/2023/film/news/christopher-nolan-inception-ending-correct-answer-1235676875/"><img src="images/Minimalist Movie Poster (5).png" alt="Inception"></a>
+        <h3>Inception</h3>
+    </div>
+
+    <div class="movie-card">
+        <a href = "https://basilmarinerchase.wordpress.com/2014/11/14/explaining-the-ending-of-interstellar/"><img src="images/Minimalist Movie Poster (6).png" alt="Interstellar"></a>
+        <h3>Interstellar</h3>
+    </div>
+
+    <div class="movie-card">
+        <a href = "https://nofilmschool.com/tenet-ending-explained"><img src="images/Minimalist Movie Poster (7).png" alt="Tenet"></a>
+        <h3>Tenet</h3>
+    </div>
+
+    <div class="movie-card">
+        <a href = "https://nofilmschool.com/shutter-island-explained"><img src="images/Minimalist Movie Poster (8).png" alt="Shutter Island"></a>
+        <h3>Shutter Island</h3>
+    </div>
+    <div class="movie-card">
+        <a href = "https://www.imdb.com/title/tt0166924/plotsummary//"><img src="images/Minimalist Movie Poster (27).png" alt="Mulholland Drive"></a>
+        <h3>Mulholland Drive</h3>
+        </div>
+    <div class="movie-card">
+        <a href = "https://moviesandscience.com/blog/movies/donnidarko"><img src="images/Minimalist Movie Poster (28).png" alt="Donnie Darko"></a>
+        <h3>Donnie Darko</h3>
+        </div>
+        <div card class="movie-card">
+            <a href = "https://www.imdb.com/title/tt0482571/plotsummary/"><img src="images/Minimalist Movie Poster (29).png" alt="The Prestige"></a>
+            <h3>The Prestige</h3>
+            </div>
+        <div card class="movie-card">
+            <a href = "https://www.imdb.com/list/ls540372550/"><img src="images/Minimalist Movie Poster (30).png" alt="Fight Club"></a>
+            <h3>Fight Club</h3>
+            </div>
+        <div class = "movie-card">
+            <a href = "https://www.imdb.com/title/tt0209144/plotsummary/"><img src="images/Minimalist Movie Poster (31).png" alt="Memento"></a>
+            <h3>Memento</h3>
+            </div>
+        <div class = "movie-card">
+            <a href = "https://www.imdb.com/title/tt0133093/plotsummary/"><img src="images/Minimalist Movie Poster (32).png" alt="The Matrix"></a>
+            <h3>The Matrix</h3>
+            </div>
+        <div class = "movie-card">
+            <a href = "https://www.imdb.com/title/tt0468569/plotsummary/"><img src="images/Minimalist Movie Poster (47).png" alt="The Dark Knight"></a>
+            <h3>The Dark Knight</h3>
+            </div>
+        <div class = "movie-card">
+            <a href = "https://www.imdb.com/title/tt0111161/plotsummary/"><img src="images/Minimalist Movie Poster (48).png" alt="The Shawshank Redemption"></a>
+            <h3>The Shawshank Redemption</h3>
+            </div>
+        <div class = "movie-card">
+            <a href = "https://www.imdb.com/title/tt0109830/plotsummary/"><img src="images/Minimalist Movie Poster (49).png" alt="Forrest Gump"></a>
+            <h3>Forrest Gump</h3>
+            </div>
+        <div class = "movie-card">
+            <a href = "https://www.imdb.com/title/tt0167404/plotsummary/"><img src="images/Minimalist Movie Poster (50).png" alt="The Sixth Sense"></a>
+            <h3>The Sixth Sense</h3>
+            </div>
+        <div class = "movie-card">
+            <a href = "https://www.imdb.com/title/tt0114369/plotsummary/"><img src="images/Minimalist Movie Poster (51).png" alt="Se7en"></a>
+            <h3>Se7en</h3>
+            </div>
+    </div>
+    <script>
+const searchBar = document.getElementById("searchBar");
+const movieCards = document.querySelectorAll(".movie-card");
+
+searchBar.addEventListener("keyup", function() {
+
+    const searchValue = searchBar.value.toLowerCase();
+
+    movieCards.forEach(card => {
+
+        const movieName = card
+            .querySelector("h3")
+            .textContent
+            .toLowerCase();
+
+        if(movieName.includes(searchValue)){
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+
+});
+</script>
+    </body>
+</html>

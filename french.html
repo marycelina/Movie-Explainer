@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>French</title>
+        <style>
+            img{height: 700; width: 500;}
+             .movie-gallery{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.movie-card{
+    text-align:center;
+}
+
+.movie-card img{
+    height:600px;
+    width:400px;
+     transition:0.3s;}
+.movie-card img:hover{
+    transform:scale(1.1);}
+   
+    #searchBar{
+    width:60%;
+    max-width:500px;
+    padding:12px;
+    font-size:18px;
+    border:none;
+    border-radius:25px;
+    outline:none;}
+    .search-container{
+    text-align:center;
+    margin:30px 0;}
+    body{
+    background-image: url('https://i.pinimg.com/736x/eb/3c/85/eb3c853f56c28ad31fc2afef3bf8edc4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+
+        </style>
+    </head>
+    <body style = "font-size: 20; font-family: 'Geneva';">
+        <h2>French movie explanations</h2>
+        <p>French cinema is known for its artistic storytelling, deep philosophical themes, and unique filmmaking styles. Many French movies feature non-linear narratives, symbolism, psychological elements, and open-ended endings that can be difficult to understand on a first viewing. French movie explanations help viewers uncover hidden meanings, interpret complex storylines, and understand the deeper messages behind the films. These explanations provide valuable insights into the characters, themes, and symbolism, enhancing the overall viewing experience and appreciation of French cinema.</p>
+                <div class="search-container">
+    <input type="text" id="searchBar" placeholder="Search movies...">
+        </div>
+        <div class="movie-gallery">
+            <div class="movie-card">
+                <a href = "https://www.thefader.com/2012/10/17/what-in-the-world-is-holy-motors-about"><img src = "images/Minimalist Movie Poster (18).png" alt = "Holy Motors"></a>
+                <h3>Holy Motors</h3>
+            </div>
+            <div class="movie-card">
+                <a href = "https://ifyouwantthegravy.wordpress.com/2020/04/13/enter-the-void-review/"><img src = "images/Minimalist Movie Poster (19).png" alt = "Enter the Void"></a>
+                <h3>Enter the Void</h3>
+            </div>
+            <div class="movie-card">
+                <a href = "https://www.thisisbarry.com/film/titane-explained-movie-plot-and-ending/"><img src = "images/Minimalist Movie Poster (20).png" alt = "Titane"></a>
+                <h3>Titane</h3>
+            </div>
+            <div class="movie-card">
+                <a href = "https://www.imdb.com/title/tt0290673/plotsummary/"><img src="images/Minimalist Movie Poster (21).png" alt = "Irreversible"></a>
+                <h3>Irreversible</h3>
+            </div>
+            <div class="movie-card">
+                <a href = "https://scriptophile551675913.wordpress.com/2019/03/26/climax-film-review-analysis/"><img src="images/Minimalist Movie Poster (22).png" alt = "Climax"></a>
+                <h3>Climax</h3>
+            </div>
+            <div class="movie-card">
+                <a href = "https://www.imdb.com/title/tt0082933/plotsummary/"><img src="images/Minimalist Movie Poster (23).png" alt = "Possession"></a>
+                <h3>Possession</h3>
+            </div>
+        </div>
+        <script>
+const searchBar = document.getElementById("searchBar");
+const movieCards = document.querySelectorAll(".movie-card");
+
+searchBar.addEventListener("keyup", function() {
+
+    const searchValue = searchBar.value.toLowerCase();
+
+    movieCards.forEach(card => {
+
+        const movieName = card
+            .querySelector("h3")
+            .textContent
+            .toLowerCase();
+
+        if(movieName.includes(searchValue)){
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+
+});
+</script>
+    </body>
+</html>

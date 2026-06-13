@@ -1,0 +1,19 @@
+label{
+    display : inline-block;
+    width: 500px;}
+input{
+    width: 200px;
+    padding : 10px;}
+form{
+    width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 20px;
+    border-radius: 50px;
+
+    background: rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}

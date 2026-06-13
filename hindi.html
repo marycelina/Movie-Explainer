@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <title>Hindi</title>
+        <style>
+            img{height: 700; width: 500;}
+             .movie-gallery{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.movie-card{
+    text-align:center;
+}
+
+.movie-card img{
+    height:600px;
+    width:400px;
+     transition:0.3s;}
+.movie-card img:hover{
+    transform:scale(1.1);}
+   
+    #searchBar{
+    width:60%;
+    max-width:500px;
+    padding:12px;
+    font-size:18px;
+    border:none;
+    border-radius:25px;
+    outline:none;}
+    .search-container{
+    text-align:center;
+    margin:30px 0;}
+    body{
+    background-image: url('images/image12.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+
+        </style>
+    </head>
+    <body style = "font-size: 20; font-family: 'Geneva';">
+        <h2>Hindi movie explanations</h2>
+        <p>Hindi cinema, popularly known as Bollywood, produces a wide range of movies, including thrillers, mysteries, science fiction films, and psychological dramas. Some Hindi movies feature complex plots, hidden clues, and unexpected endings that can be difficult to understand fully. Hindi movie explanations help viewers gain a deeper understanding of the story, characters, themes, and ending interpretations. These explanations make it easier for audiences to appreciate the creativity and message behind the films.</p>
+        <div class="search-container">
+    <input type="text" id="searchBar" placeholder="Search movies...">
+        </div>
+        <div class="movie-gallery">
+            <div class="movie-card">
+                <a href = "https://thelittlecorner.home.blog/2025/03/04/tumbbad-2018-as-good-as-gold/"><img src = "images/Minimalist Movie Poster (9).png" alt = "Tumbbad"></a>
+                <h3>Tumbbad</h3>
+            </div>
+            <div class="movie-card">
+                <a href = "https://movienalytical.wordpress.com/2021/06/29/explanation-of-no-smoking/"><img src = "images/Minimalist Movie Poster (10).png" alt = "No Smoking"></a>
+                <h3>No Smoking</h3>
+            </div>
+            <div class="movie-card">
+                <a href = "https://www.imdb.com/title/tt2882328/plotsummary/"><img src = "images/Minimalist Movie Poster (11).png" alt = "Ugly"></a>
+                <h3>Ugly</h3>
+            </div>
+            <div class="movie-card">
+                <a href = "https://www.imdb.com/title/tt3860916/plotsummary/"><img src="images/Minimalist Movie Poster (12).png" alt = "Cargo"></a>
+                <h3>Cargo</h3>
+            </div>
+            <div class="movie-card">
+                <a href = "https://projectorhead.in/archives/nine/the-movie-of-ideas-anand-gandhi-s-ship-of-theseus/"><img src = "images/Minimalist Movie Poster (33).png" alt = "Ship of Thesus"></a>
+                <h3>Ship of Thesus</h3>
+            </div>
+            <div class="movie-card">
+                <a href = "https://www.stranger-fiction.com/stories-to-watch/how-men-are-made-an-analysis-of-a-death-in-the-gunj"><img src = "images/Minimalist Movie Poster (34).png" alt = "A Death in the Gunj"></a>
+                <h3>A Death in the Gunj</h3>
+            </div>
+            <div class="movie-card">
+                <a href = "https://www.thisisbarry.com/film/game-over-2019-ending-explained-conclusive-evidence/"><img src = "images/Minimalist Movie Poster (35).png" alt = "Game Over"></a>
+                <h3>Game over</h3>
+            </div>
+            <div class="movie-card">
+                <a href = "https://timesofindia.indiatimes.com/madaari-movie-review-plot-summary-/articleshow/53364978.cms"><img src = "images/Minimalist Movie Poster (36).png" alt = "Madaari"></a>
+                <h3>Madaari</h3>
+            </div>
+             <div class="movie-card">
+                <a href = "https://www.imdb.com/title/tt1187043/plotsummary/"><img src = "images/Minimalist Movie Poster (52).png" alt = "3 Idiots"></a>
+                <h3>3 Idiots</h3>
+            </div>
+             <div class="movie-card">
+                <a href = "https://www.imdb.com/title/tt5074352/plotsummary/"><img src = "images/Minimalist Movie Poster (53).png" alt = "Dangal"></a>
+                <h3>Dangal</h3>
+            </div>
+             <div class="movie-card">
+                <a href = "https://www.imdb.com/title/tt2338151/plotsummary/"><img src = "images/Minimalist Movie Poster (54).png" alt = "PK"></a>
+                <h3>PK</h3>
+            </div>
+             <div class="movie-card">
+                <a href = "https://www.imdb.com/title/tt3863552/plotsummary/"><img src = "images/Minimalist Movie Poster (55).png" alt = ""></a>
+                <h3>Bajrangi Bhaijaan</h3>
+            </div> 
+             <div class="movie-card">
+                <a href = "https://www.imdb.com/title/tt1562872/plotsummary/"><img src = "images/Minimalist Movie Poster (56).png" alt = "Zindagi Na Milegi Dobara"></a>
+                <h3>Zindagi Na Milegi Dobara</h3>
+            </div>
+             <div class="movie-card">
+                <a href = "https://www.imdb.com/title/tt0073707/plotsummary/"><img src = "images/Minimalist Movie Poster (57).png" alt = "Sholay"></a>
+                <h3>Sholay</h3>
+            </div>
+            <div class="movie-card">
+                <a href = "https://www.imdb.com/title/tt3322420/plotsummary/"><img src = "images/Minimalist Movie Poster (58).png" alt = "Queen"></a>
+                <h3>Queen</h3>
+            </div>
+        </div>
+        <script>
+const searchBar = document.getElementById("searchBar");
+const movieCards = document.querySelectorAll(".movie-card");
+
+searchBar.addEventListener("keyup", function() {
+
+    const searchValue = searchBar.value.toLowerCase();
+
+    movieCards.forEach(card => {
+
+        const movieName = card
+            .querySelector("h3")
+            .textContent
+            .toLowerCase();
+
+        if(movieName.includes(searchValue)){
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+
+});
+</script>
+    </body>
+</html>

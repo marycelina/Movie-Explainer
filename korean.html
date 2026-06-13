@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>Korean</title>
+        <style>
+            img{height: 700; width: 500;}
+             .movie-gallery{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.movie-card{
+    text-align:center;
+}
+
+.movie-card img{
+    height:600px;
+    width:400px;
+     transition:0.3s;}
+.movie-card img:hover{
+    transform:scale(1.1);}
+    #searchBar{
+    width:60%;
+    max-width:500px;
+    padding:12px;
+    font-size:18px;
+    border:none;
+    border-radius:25px;
+    outline:none;}
+    .search-container{
+    text-align:center;
+    margin:30px 0;}
+    body{
+    background-image: url('https://i.pinimg.com/736x/ef/40/15/ef4015f8d8217841c22176fbb6777cab.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+
+
+        </style>
+    </head>
+    <body style = "font-size: 20; font-family: 'Geneva';">
+        <h2>Korean movie explanations</h2>
+        <p>Korean cinema is renowned for its unique storytelling, psychological depth, and unexpected plot twists. Many Korean movies feature complex narratives, symbolic themes, and open-ended conclusions that can be challenging to fully understand on a first viewing. Korean movie explanations help viewers uncover hidden meanings, understand character motivations, and interpret confusing endings. These explanations provide deeper insight into the story and enhance the overall viewing experience, making it easier to appreciate the creativity and artistic vision behind Korean films.</p>
+        <div class="search-container">
+    <input
+        type="text" id="searchBar" placeholder="Search movies...">
+        </div>
+        <div class="movie-gallery">
+
+    <div class="movie-card">
+        <a href = "https://www.looper.com/1064976/the-ending-of-oldboy-explained/"><img src = "images/Minimalist Movie Poster (13).png" alt = "Oldboy"></a>
+         <h3>Oldboy</h3>
+    </div>
+
+    <div class="movie-card">
+        <a href = "https://www.thisisbarry.com/film/burning-movie-explained-directors-views-korean-film/"><img src = "images/Minimalist Movie Poster (14).png" alt = "Burning"></a>
+        <h3>Burning</h3>
+    </div>
+
+    <div class="movie-card">
+        <a href = "https://screenrant.com/the-wailing-2016-every-twist-explained/"><img src = "images/Minimalist Movie Poster (15).png" alt = "The Wailing"></a>
+        <h3>The Wailing</h3>
+    </div>
+
+    <div class="movie-card">
+       <a href = "https://collider.com/parasite-ending-explained/"><img src = "images/Minimalist Movie Poster (16).png" alt = "Parasite"></a>
+       <h3>Parasite</h3>
+    </div>
+    <div class="movie-card">
+       <a href = "https://www.thisisbarry.com/film/madeo-mother-2009-korean-movie-ending-explained/"><img src = "images/Minimalist Movie Poster (17).png" alt = "Mother"></a>
+       <h3>Mother</h3> 
+    </div>
+    <div class="movie-card">
+       <a href = "https://www.ashleyhajimirsadeghi.com/blog/decision-to-leave"><img src = "images/Minimalist Movie Poster (37).png" alt = "Decision to Leave"></a>
+       <h3>Decision to Leave</h3>
+       </div>
+    <div class="movie-card">
+       <a href = "https://www.ashleyhajimirsadeghi.com/blog/peppermint-candy"><img src = "images/Minimalist Movie Poster (38).png" alt = "Peppermint Candy"></a>
+       <h3>Peppermint Candy</h3>
+       </div>
+    <div class="movie-card">
+       <a href = "https://www.slashfilm.com/1437789/a-tale-of-two-sisters-ending-explained/"><img src = "images/Minimalist Movie Poster (39).png" alt = "A Tale of Two Sisters"></a>
+       <h3>A Tale of Two Sisters</h3>
+       </div>
+    <div class="movie-card">
+       <a href = "https://www.ashleyhajimirsadeghi.com/blog/memories-of-murder-2003"><img src = "images/Minimalist Movie Poster (40).png" alt = "Memories of Murder"></a>
+       <h3>Memories of Murder</h3>
+       </div>
+    <div class = "movie-card">
+        <a href = "https://www.ashleyhajimirsadeghi.com/blog/train-to-busan-2016"><img src = "images/Minimalist Movie Poster (41).png" alt = "Train to Busan"></a>
+        <h3>Train to Busan</h3>
+    </div>
+    <div class = "movie-card">
+        <a href = "https://thekoreanlass.wordpress.com/2018/10/20/film-review-forgotten-tragedy-with-a-great-plot-twist/"><img src = "images/Minimalist Movie Poster (42).png" alt = "Forgotten"></a>
+        <h3>Forgotten</h3>
+    </div>
+    <div class="movie-card">
+        <a href = "https://www.ashleyhajimirsadeghi.com/blog/the-handmaiden-2016"><img src = "images/Minimalist Movie Poster (43).png" alt = "The Handmaiden"></a>
+        <h3>The Handmaiden</h3>
+        </div>
+    <div class="movie-card">
+        <a href = "https://www.ashleyhajimirsadeghi.com/blog/i-saw-the-devil-2010"><img src = "images/Minimalist Movie Poster (44).png" alt = "I Saw the Devil"></a>
+        <h3>I Saw the Devil</h3>
+        </div>
+    <div class="movie-card">
+        <a href = "https://spoilertown.com/the-chaser-2008/"><img src = "images/Minimalist Movie Poster (45).png" alt = "The Chaser"></a>
+        <h3>The Chaser</h3>
+        </div>
+    <div class="movie-card">
+        <a href = "https://spoilertown.com/new-world-2013/"><img src = "images/Minimalist Movie Poster (46).png" alt = "New World"></a>
+        <h3>New World</h3>
+    </div>
+    <script>
+const searchBar = document.getElementById("searchBar");
+const movieCards = document.querySelectorAll(".movie-card");
+
+searchBar.addEventListener("keyup", function() {
+
+    const searchValue = searchBar.value.toLowerCase();
+
+    movieCards.forEach(card => {
+
+        const movieName = card
+            .querySelector("h3")
+            .textContent
+            .toLowerCase();
+
+        if(movieName.includes(searchValue)){
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+
+});
+</script>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Feedback</title>
+        <style>
+            label{
+              display : inline-block;
+              width: 500px;}
+input{
+    width: 200px;
+    padding : 10px;}
+form{
+    width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 20px;
+    border-radius: 50px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3)}
+    body{
+    background-image: url('images/image10.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;}
+    a{
+    color:rgb(164, 58, 58);
+    text-decoration:none;
+    font-size: 30;}
+    a:hover{
+    color:rgb(61, 124, 61);
+    text-decoration:underline;}
+        </style>
+    </head>
+    <body>
+        <section style="background-color:rgb(190, 107, 107);">
+        <header>
+        <nav style = "width: 100%; height: 35; font-size: 20px; text-align: right;">
+            <a href = "movie.html" style = "padding-right: 30px; color: rgb(66, 117, 47);">Home</a>
+            <a href = "about.html" style = "padding-right: 30px; color: rgb(66, 117, 47);">About</a>
+            <a href = "mailto:marycelina02052007@gmail.com" style = "padding-right: 30px; color: rgb(66, 117, 47);">Contact us</a>
+            <a href = "feedback.html" style = "padding-right: 30px; color: rgb(66, 117, 47);">Feedback</a>
+        </nav>
+        </header>
+        </section>
+        <h1 style = "text-align: center;"><u><em>FEEDBACK</em></u> </h1>
+        <form  style = "font-family:Tahoma; font-size: 30;" onsubmit="alert('Submitted')">
+            <label>Name:</label>
+            <input type = "text" placeholder = "Enter your name" required><br><br>
+            <label>Address:</label>
+            <textarea rows = "5" cols = "12">
+            </textarea><br><br>
+            <label>Phone no.:</label>
+            <input type = "number" placeholder="Enter your number"><br><br>
+            <label>How satisfied are you with our service?</label>
+            <select>
+                <option>Very satisfied</option>
+                <option>Satisfied</option>
+                <option>Neutral</option>
+                <option> Dissatisfied</option>
+                <option>Very dissatisfied</option>
+            </select><br><br>
+            <label>Would you recommend our service to others?</label><br>
+            <input type = "radio" name = "recommend" value ="yes">yes<br>
+            <input type = "radio" name = "recommend" value="no">no<br>
+            <label>Reset</label>
+            <input type = "reset"><br><br>
+            <label>Submit</label>
+            <input type = "submit"><br><br>
+        </form>
+    </body>
+</html>
